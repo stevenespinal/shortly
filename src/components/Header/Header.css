@@ -1,0 +1,12 @@
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 0 165px;
+  }
+}

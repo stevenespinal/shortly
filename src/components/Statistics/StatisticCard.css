@@ -1,0 +1,68 @@
+#statisticCard {
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+#statisticCard:last-child {
+  margin-bottom: 48px;
+}
+
+#statisticCard .cardDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#statisticCard .cardDescription h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #34313d;
+  padding: 0 32px;
+}
+
+#statisticCard .cardDescription p {
+  padding: 24px 32px;
+}
+
+#statisticCard .statisticCircle {
+  width: 88px;
+  height: 88px;
+  background-color: #3a3054;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -48px;
+}
+
+#statisticCard .statisticCircle img {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  #statisticCard:last-child {
+    margin-bottom: 0;
+    top: 100px;
+  }
+
+  #statisticCard {
+    position: relative;
+  }
+
+  #statisticCard:nth-child(3) {
+    top: 50px;
+  }
+}

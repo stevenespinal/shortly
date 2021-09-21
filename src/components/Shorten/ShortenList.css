@@ -1,0 +1,66 @@
+#shortenCard {
+  margin: 24px;
+}
+
+#shortenCard h6 {
+  border-bottom: 1px solid #9e9aa8;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  /* identical to box height, or 225% */
+
+  letter-spacing: 0.12px;
+
+  color: #34313d;
+}
+
+#shortenCard p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  /* identical to box height, or 225% */
+
+  letter-spacing: 0.12px;
+
+  color: #2bd0d0;
+}
+
+#shortenCard button {
+  background: #2bd0d0;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+#shortenCard .clicked {
+  background-color: #3a3054;
+}
+
+#shortenCard div {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  #shortenCard {
+    padding: 0 165px;
+    margin: 0;
+  }
+
+  #shortenCard div {
+    display: flex;
+  }
+
+  #shortenCard h6 {
+    border: none;
+    flex: 3;
+  }
+
+  #shortenCard button {
+    flex: 1;
+    margin-left: 24px;
+  }
+}

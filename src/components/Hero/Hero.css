@@ -1,0 +1,93 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+}
+#hero h1 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -1.05px;
+  color: #34313d;
+}
+
+#hero p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.122727px;
+  color: #9e9aa8;
+  margin: 15px 0;
+}
+
+#hero button {
+  background: #2bd0d0;
+  border-radius: 28px;
+  border: none;
+  height: 56px;
+  width: 200px;
+  color: white;
+}
+
+#hero img {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#hero .description {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 170px;
+    padding: 0 165px;
+  }
+
+  #hero img {
+    order: 1;
+    /* width: 600; */
+  }
+
+  #hero .description {
+    /* width: 550px; */
+    align-items: flex-start;
+  }
+
+  #hero h1,
+  #hero p {
+    text-align: left;
+  }
+
+  #hero h1 {
+    font-size: 60px;
+    line-height: 70px;
+    /* or 112% */
+
+    letter-spacing: 2px;
+  }
+
+  #hero p {
+    font-size: 22px;
+    line-height: 36px;
+    /* or 164% */
+
+    letter-spacing: 0.15px;
+  }
+
+  #hero button {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}

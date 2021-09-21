@@ -1,0 +1,67 @@
+#statistics {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+}
+
+#statistics h4 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  /* identical to box height, or 171% */
+
+  text-align: center;
+  letter-spacing: -0.7px;
+
+  color: #34313d;
+}
+
+#statistics p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+  letter-spacing: 0.109091px;
+
+  color: #9e9aa8;
+}
+
+#statistics .vl {
+  width: 8px;
+  background: #2bd0d0;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#statistics #cardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  #statistics {
+    margin-bottom: 200px;
+  }
+  #statistics #cardContainer {
+    flex-direction: row;
+    padding: 0 165px;
+  }
+
+  #statistics .vl {
+    width: 50px;
+    height: 8px;
+    position: relative;
+    top: 50px;
+  }
+
+  #statistics .vl:nth-child(2) {
+    top: -15px;
+  }
+}

@@ -1,0 +1,66 @@
+#shorten {
+  background: #3a3054;
+  border-radius: 10px;
+  margin: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+#shorten input,
+#shorten button {
+  height: 48px;
+}
+
+#shorten input {
+  margin-bottom: 16px;
+  padding: 0 16px;
+  outline: none;
+}
+
+#shorten button {
+  background: #2bd0d0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+#shorten .focusOut {
+  border: 3px solid #f46363;
+}
+
+#shorten .focusIn {
+  border: 3px solid white;
+}
+
+#shorten .focusOut::placeholder {
+  font-weight: 500;
+  /* font-size: 16px; */
+  line-height: 36px;
+  /* identical to box height, or 225% */
+  letter-spacing: 0.12px;
+  color: #f46363;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1200px) {
+  #shorten {
+    margin: 0 165px;
+    flex-direction: row;
+    align-items: center;
+    padding: 52px 64px;
+    position: relative;
+    top: -80px;
+  }
+  #shorten input {
+    width: 80%;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  #shorten button {
+    width: 20%;
+    margin-left: 24px;
+  }
+}
